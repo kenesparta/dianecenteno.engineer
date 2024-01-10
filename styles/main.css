@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.circular-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0 solid #000;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.9);
+}
+
+.__main-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr; /* 1:2:1 ratio */
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    margin: 0.5em 0 0.1em 0;
+    font-size: 2.7em;
+    font-weight: bolder;
+    color: rgb(18, 106, 54);
+}
+
+.profesion {
+    margin: 0.1em 0 1.5em 0;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: rgb(18, 106, 54);
+}
+
+.description {
+    font-size: 1.15em;
+    text-align: left;
+}
+
+.subtitulo {
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: bolder;
+}
