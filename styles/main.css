@@ -10,7 +10,6 @@ body, html {
     /*border-radius: 50%;*/
     border: 0 solid #000;
     box-shadow: 0 0 10px rgb(58, 66, 34, .9);
-
 }
 
 .main-banner {
@@ -88,5 +87,51 @@ body, html {
 
     .button-cv {
         margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .title-name {
+
+        font-size: 1.3rem;
+    }
+
+    .main-description {
+        font-size: 1rem;
+    }
+
+    .profession {
+        font-size: 1.5rem;
+    }
+
+    .button-cv {
+        margin-bottom: 1rem;
+    }
+
+    .circular-image {
+        height: 420px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .title-name {
+
+        font-size: 1.1rem;
+    }
+
+    .main-description {
+        font-size: 0.8rem;
+    }
+
+    .profession {
+        font-size: 1.5rem;
+    }
+
+    .button-cv {
+        margin-bottom: 1rem;
+    }
+
+    .circular-image {
+        height: 350px !important;
     }
 }
