@@ -8,7 +8,7 @@ body, html {
     /*width: 350px;*/
     /*height: 350px;*/
     /*border-radius: 50%;*/
-    border: 0px solid #000;
+    border: 0 solid #000;
     box-shadow: 0 0 10px rgb(58, 66, 34, .9);
 
 }
@@ -31,17 +31,17 @@ body, html {
 .title-name {
     color: rgb(18, 106, 54);
     font-weight: 900;
-    font-size: 2.2em;
+    font-size: 2.6rem;
 }
 
 .main-description {
     font-weight: 400;
-    font-size: 1.6em;
+    font-size: 1.9rem;
 }
 
 .profession {
     font-weight: 800;
-    font-size: 4em;
+    font-size: 4.5rem;
 }
 
 .__ds-card-title {
@@ -51,4 +51,42 @@ body, html {
 
 .__ds-card-sub-title {
     font-weight: 600;
+}
+
+@media (max-width: 1500px) {
+    .title-name {
+
+        font-size: 2.0rem;
+    }
+
+    .main-description {
+        font-size: 1.7rem;
+    }
+
+    .profession {
+        font-size: 4.0rem;
+    }
+
+    .button-cv {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .title-name {
+
+        font-size: 1.5rem;
+    }
+
+    .main-description {
+        font-size: 1.1rem;
+    }
+
+    .profession {
+        font-size: 2.7rem;
+    }
+
+    .button-cv {
+        margin-bottom: 1rem;
+    }
 }
