@@ -1,53 +1,54 @@
 body, html {
     margin: 0;
+    padding: 0;
     height: 100%;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Nunito', sans-serif;
 }
 
 .circular-image {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 0 solid #000;
-    box-shadow: 0 0 10px rgba(80, 80, 80, 0.9);
+    /*width: 350px;*/
+    /*height: 350px;*/
+    /*border-radius: 50%;*/
+    border: 0px solid #000;
+    box-shadow: 0 0 10px rgb(58, 66, 34, .9);
+
 }
 
-.__main-container {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr; /* 1:2:1 ratio */
-    height: 100%;
-    width: 100%;
+.main-banner {
+    background-color: rgba(35, 147, 69, 0.2);
+    padding: 2.5em 5em 2.5em 5em;
 }
 
-.grid-item {
-    padding: 20px;
-    text-align: center;
+.dm-serif-font {
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
 }
 
-.title {
-    margin: 0.5em 0 0.1em 0;
-    font-size: 2.7em;
-    font-weight: bolder;
+.roboto-font {
+    font-family: "Roboto Flex", sans-serif;
+    font-style: normal;
+}
+
+.title-name {
     color: rgb(18, 106, 54);
+    font-weight: 900;
+    font-size: 2.2em;
 }
 
-.profesion {
-    margin: 0.1em 0 1.5em 0;
-    font-size: 1.3em;
-    font-weight: bolder;
+.main-description {
+    font-weight: 400;
+    font-size: 1.6em;
+}
+
+.profession {
+    font-weight: 800;
+    font-size: 4em;
+}
+
+.__ds-card-title {
     color: rgb(18, 106, 54);
+    font-weight: 800;
 }
 
-.description {
-    font-size: 1.15em;
-    text-align: left;
-}
-
-.subtitulo {
-    font-size: 1.3em;
-    text-align: left;
-    font-weight: bolder;
+.__ds-card-sub-title {
+    font-weight: 600;
 }

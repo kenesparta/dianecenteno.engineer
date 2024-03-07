@@ -1,1 +1,2 @@
-for file in *.*; do cwebp -q 18 "$file" -o "${file%.*}.webp"; done
+cd ./img/galery
+for file in *.jpg; do cwebp -q 50 "$file" -o "${file%.*}.webp"; done

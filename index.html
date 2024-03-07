@@ -5,60 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Diane Centeno</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/photo.css">
-    <link rel="stylesheet" href="./styles/video.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta property="og:url" content="https://dianecenteno.engineer/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Diane Centeno - Ingeniera Agrónoma">
+    <meta property="og:description" content="Explora mi experiencia profesional.">
+    <meta property="og:image" content="https://dianecenteno.engineer/img/susan.jpg">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,700;1,300;1,600&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
-<div class="__main-container">
-    <div class="grid-item"></div>
-    <div class="grid-item">
-        <div>
-            <img class="circular-image" src="./img/main.jpg" alt="">
-            <p class="title">Diane Centeno</p>
-            <p class="profesion">Ingeniera Agrónoma</p>
-            <p class="description">
-                Tengo experiencia en extensión agropecuaria; en gestión, elaboración, ejecución,
-                monitoreo y control de Proyectos así como en manejo de viveros forestales y frutícolas desde su
-                producción en vivero hasta su instalación y manejo en campo definitivo.
-            </p>
-        </div>
-        <div>
-            <div class="photo-gallery">
-                <img src="./img/galery/001.webp" alt="">
-                <img src="./img/galery/002.webp" alt="">
-                <img src="./img/galery/003.webp" alt="">
-                <img src="./img/galery/004.webp" alt="">
-                <img src="./img/galery/005.webp" alt="">
-                <img src="./img/galery/006.webp" alt="">
-                <img src="./img/galery/007.webp" alt="">
-                <img src="./img/galery/008.webp" alt="">
-                <img src="./img/galery/009.webp" alt="">
-                <img src="./img/galery/010.webp" alt="">
-                <img src="./img/galery/011.webp" alt="">
-                <img src="./img/galery/012.webp" alt="">
-                <img src="./img/galery/013.webp" alt="">
-                <img src="./img/galery/014.webp" alt="">
-                <img src="./img/galery/015.webp" alt="">
-                <img src="./img/galery/016.webp" alt="">
-                <img src="./img/galery/017.webp" alt="">
-                <img src="./img/galery/018.webp" alt="">
+
+<div class="container-fluid d-flex align-items-center justify-content-center main-banner">
+    <div class="row">
+        <div class="col-md-1 col-sm-1"></div>
+        <div class="col-12 col-md-7 col-sm-6 d-flex align-items-center justify-content-right p-2">
+            <div>
+                <h3 class="title-name roboto-font">¡Hola! Soy Diane</h3>
+                <h1 class="profession dm-serif-font">Ingeniera Agrónoma</h1>
+                <p class="main-description roboto-font">
+                    Tengo experiencia en extensión agropecuaria; en gestión, elaboración, ejecución,
+                    monitoreo y control de Proyectos así como en manejo de viveros forestales y frutícolas desde su
+                    producción en vivero hasta su instalación y manejo en campo definitivo.
+                </p>
+                <a class="btn btn-success" role="button" target="_blank" href="cv/cv.pdf">
+                    <i class="bi bi-cloud-download pe-2"></i>
+                    Descargar CV
+                </a>
             </div>
         </div>
-        <div>
-            <div class="main-video">
-                <video width="100%" controls>
-                    <source src="./media/001.MOV" type="video/mp4">
-                </video>
-            </div>
+        <div class="col-12 col-md-3 col-sm-4 d-flex align-items-center justify-content-center">
+            <img src="./img/susan.jpg" alt="Description Image" class="img-fluid circular-image">
+        </div>
+        <div class="col-md-1 col-sm-1"></div>
+    </div>
+</div>
+
+<section class="container my-5 p-3">
+    <div class="row">
+        <div class="col">
+            <h2>Mi Experiencia</h2>
+            <p></p>
         </div>
     </div>
-    <div class="grid-item"></div>
-</div>
+    <div class="row gy-4" id="my-experience"></div>
+</section>
+
+<!--<section class="container my-5">-->
+<!--    <div class="row">-->
+<!--        <div class="col">-->
+<!--            <h2>Mis Habilidades</h2>-->
+<!--            <p></p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="row">-->
+<!--    </div>-->
+<!--</section>-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
