@@ -26,7 +26,7 @@ function appendExperiences(experiences) {
     const cardHTML = `
             <div class="col-sm-6 col-md-4">
                 <div class="card h-100">
-                    <img src="${foto}" class="card-img-top" alt="Card Image" height="200px">
+                    <img src="${foto}" class="card-img-top" alt="Card Image" height="250px">
                     <div class="card-body">
                         <h5 class="__ds-card-title">${cargo}</h5>
                         <p class="__ds-card-sub-title">
@@ -38,11 +38,11 @@ function appendExperiences(experiences) {
                         </div>
                     </div>
                     <div class="card-footer" style="background-color: rgba(35, 147, 69, 0.1)">
-                        <small class="text-body-secondary"><i class="bi bi-calendar-date"></i>
+                        <small class="text-body-secondary"><i class="bi bi-calendar2-date-fill pe-1"></i>
                             ${convertDateRange(fecha_inicio, fecha_fin)}
                         </small>
                         <br>
-                        <small class="text-body-secondary"><i class="bi bi-geo-alt-fill"></i>
+                        <small class="text-body-secondary"><i class="bi bi-geo-alt-fill pe-1"></i>
                             ${distrito ? distrito + ' - ' : ''}${provincia} - ${region}
                         </small>
                     </div>
