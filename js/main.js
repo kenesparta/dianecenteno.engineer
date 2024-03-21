@@ -24,7 +24,7 @@ function appendExperiences(experiences) {
     const { id, foto, cargo, descripcion, fecha_inicio, fecha_fin, institucion, region, provincia, distrito } = experience;
 
     const cardHTML = `
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="card h-100">
                     <img src="${foto}" class="card-img-top" alt="Card Image" height="250px">
                     <div class="card-body">
@@ -63,4 +63,64 @@ function loadAndAppendExperiences() {
     .catch(error => console.error('Error loading the experiences data:', error));
 }
 
+function appendSkills(skills) {
+  const container = document.querySelector('#my-skills');
+
+  skills.forEach(s => {
+    const { image } = s;
+    const cardHTML = `
+<div class="__ds_skills_grid_element">
+  <img src="${image}" class="" alt="Card Image">
+</div>`;
+
+    container.insertAdjacentHTML('beforeend', cardHTML);
+  });
+}
+
+function loadAndAppendSkills() {
+  const skillsList = [
+    {
+      image: "./img/skills/Logo_AutoCad.png"
+    },
+    {
+      image: "./img/skills/Logo_S10.png"
+    },
+    {
+      image: "./img/skills/Logo_Delphin_Express.png"
+    },
+    {
+      image: "./img/skills/Logo_ArcGis.png"
+    },
+    {
+      image: "./img/skills/Logo_Google_Earth.png"
+    },
+    {
+      image: "./img/skills/Logo_MapSource.png"
+    },
+    {
+      image: "./img/skills/Logo_Google_Maps.png"
+    },
+    {
+      image: "./img/skills/Logo_DJI_Drone.png"
+    },
+    {
+      image: "./img/skills/Logo_Microsoft_Office.png"
+    },
+    {
+      image: "./img/skills/Logo_Minitab.png"
+    },
+    // {
+    //   image: "./img/skills/Logo_InfoStat.png"
+    // },
+  ]
+  appendSkills(skillsList)
+}
+
+function setCurrentDate() {
+  const container = document.querySelector('#current-date');
+  container.insertAdjacentHTML('beforeend', `${new Date().getFullYear()}`);
+}
+
 loadAndAppendExperiences();
+loadAndAppendSkills();
+setCurrentDate();

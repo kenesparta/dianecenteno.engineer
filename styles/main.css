@@ -5,11 +5,8 @@ body, html {
 }
 
 .circular-image {
-    /*width: 350px;*/
-    /*height: 350px;*/
-    /*border-radius: 50%;*/
     border: 0 solid #000;
-    box-shadow: 0 0 10px rgb(58, 66, 34, .9);
+    box-shadow: 0 0 20px rgb(58, 66, 34, .9);
 }
 
 .main-banner {
@@ -133,5 +130,46 @@ body, html {
 
     .circular-image {
         height: 350px !important;
+    }
+}
+
+.__ds_skills_grid {
+    display: grid;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.__ds_skills_grid_element {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    grid-template-columns: repeat(4, auto);
+    border: 2px black solid;
+    padding: 0.5em;
+}
+
+.__ds_skills_grid_element img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .__ds_skills_grid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .__ds_skills_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 901px) {
+    .__ds_skills_grid {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
